@@ -6,24 +6,29 @@ ul {
   list-style-type: none;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-}
-
 .header {
   padding: 5px;
-  height: 15vh;
+  height: 18vh;
   width: 100%;
   border-bottom: 2px solid black;
   background-color: slategray;
-  color: white;
-  font-size: 30px;
+  color: black;
+  font-size: 20px;
   font-family: 'Roboto Mono', monospace;
-  font-weight: bolder;
+  font-weight: bolder; 
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; */
 }
+
+  .nav-bar {
+  display: flex;
+  justify-content: space-around;
+ /* align-items: center; */
+  /* flex-direction: row; */
+} 
+
 
 .about:hover {
   color: lightblue
@@ -39,7 +44,10 @@ ul {
 }
 
 .larry-pic{
-  height: 100px;
-  width: 100px;
+  border: 1px solid black;
+  border-radius: 5%;
+  height: 150px;
+  width: 150px;
+ 
 }
 
