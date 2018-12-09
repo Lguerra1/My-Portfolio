@@ -10,8 +10,8 @@ const NavBar = () => {
                 <div className={classes.nameContainer}>
                     <h1 className={classes.h1}>Larry Guerra</h1>
                     <h3>801-830-7109</h3>
-                    <a href="https://www.linkedin.com/in/larry-guerra"> <i className="linkedin icon"></i></a>
-                    <a href="https://github.com/Lguerra1"> <i className="github icon"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/larry-guerra"> <i className="linkedin icon"></i></a>
+                    <a target="_blank" href="https://github.com/Lguerra1"> <i className="github icon"></i></a>
                     
                 </div>
 
