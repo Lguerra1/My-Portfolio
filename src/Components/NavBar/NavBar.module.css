@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    background-color: slategray;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+
+  .avatarContainer {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .larryPic{
+    border: 1px solid black;
+    border-radius: 5%;
+    height: 150px;
+    width: 150px;       
+  }
+
+  .navBar {
+    flex: 2 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  } 
+
+  .about:hover, .skills:hover, .projects:hover, .contact:hover {
+    color: lightblue
+  }
