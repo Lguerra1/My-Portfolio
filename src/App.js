@@ -16,7 +16,6 @@ class App extends Component {
         <Projects />
         <Contact />
       </div>
-
     );
   }
 }
