@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: relative;
     padding: 5px;
     width: 100%;
     border-bottom: 2px solid black;
@@ -15,9 +15,16 @@
 
    .avatarContainer {
     flex: 1 0 0;
-    display: flex;
-    justify-content: space-evenly;
-    /* justify-content: center; */
+    display: flex;    
+    justify-content: space-evenly;    
+   }
+
+   .nameContainer {
+     
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: column;
+     align-items: center;
    }
 
   .larryPic{
@@ -39,12 +46,20 @@
     color: lightblue
   }
 
-  h1 {
+  .h1 {
     font-size: 20px;
+    margin: 0px;
   }
+  .h3 {
+    margin-top: 0px;
+    margin-bottom: 8px;
 
+  }
 
   a{
     color: black;
-    background-color: none;
+  }
+
+  .github:hover {
+    color: darkviolet;
   }

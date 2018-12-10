@@ -9,10 +9,11 @@ const NavBar = () => {
                 <img className={classes.larryPic} src={larry} alt="Larry Guerra" />
                 <div className={classes.nameContainer}>
                     <h1 className={classes.h1}>Larry Guerra</h1>
-                    <h3>801-830-7109</h3>
-                    <a target="_blank" href="https://www.linkedin.com/in/larry-guerra"> <i className="linkedin icon"></i></a>
-                    <a target="_blank" href="https://github.com/Lguerra1"> <i className="github icon"></i></a>
-                    
+                    <h3 className={classes.h3}>801-830-7109</h3>
+                    <div>
+                        <a target="_blank" href="https://www.linkedin.com/in/larry-guerra"> <i className="linkedin icon"></i></a>
+                        <a className={classes.github} target="_blank" href="https://github.com/Lguerra1"> <i className="github icon"></i></a>
+                    </div>
                 </div>
 
             </span>
@@ -23,8 +24,6 @@ const NavBar = () => {
                 <li className={classes.projects}>Projects</li>
                 <li className={classes.contact}>Contact</li>
             </ul>
-
-
         </header>
     )
 }

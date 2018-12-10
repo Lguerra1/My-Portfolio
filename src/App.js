@@ -6,15 +6,16 @@ import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
 import NavBar from './Components/NavBar/NavBar';
 
+
 class App extends Component {
   render() {
-    return (
-      <div>
-        <NavBar />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Contact />
+    return (      
+        <div>
+          <NavBar />        
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Contact />
       </div>
     );
   }
