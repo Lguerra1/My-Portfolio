@@ -19,9 +19,9 @@ const NavBar = () => {
             </span>
 
             <ul className={classes.navBar}>
-                <li className={classes.about}>About</li>
-                <li className={classes.skills}>Skills</li>
-                <li className={classes.projects}>Projects</li>
+                <li className={classes.about}><a href="#aboutlink">About</a> </li>
+                <li className={classes.skills}><a href="#skillslink">Skills</a></li>
+                <li className={classes.projects}><a href="#projectslink">Projects</a></li>
                 {/* <li className={classes.contact}>Contact</li> */}
             </ul>
         </header>

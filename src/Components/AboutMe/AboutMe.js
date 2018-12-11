@@ -5,8 +5,8 @@ import classes from './AboutMe.module.css';
 const AboutMe = () => {
 
     return (
-        <div className={classes.aboutMeContainer}>
-            <h1 className={classes.aboutMe}>About me</h1>
+        <div className={classes.aboutMeContainer}id="aboutlink">
+            <h1 className={classes.aboutMe} >About me</h1>
             <div className={classes.biography}>
                 <p>
                     I am new to the field of web development, recently graduated from DevMountain. With a focus on the PERN stack and a solid understanding of functional programming I have had the opportunity
@@ -19,6 +19,7 @@ const AboutMe = () => {
                     Training in martial arts has taught me to always stay humble and to never underestimate others or get too confident.
                     </p>
             </div>
+         
         </div>
     )
 

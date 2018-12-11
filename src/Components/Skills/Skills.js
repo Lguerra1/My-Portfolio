@@ -12,9 +12,9 @@ import node from '../../image/node.jpg'
 const Skills = () => {
 
     return (
-        <div>
+        <div >    
+            <div id="skillslink"></div>
             <h1 className={classes.skills}>Skills</h1>
-
             <div className={classes.skillsIcons}>
                 <div className={classes.rowOne}>
                     <img className={classes.img} src={html5} />

@@ -46,15 +46,15 @@ class DemoCarousel extends Component {
 
             <Carousel className={classes.carousel} width="700px" transitionTime={1000}>
                 <div>
-                    <img src={front}/>
+                    <img src={front} />
                     <p className="legend">Home Page</p>
                 </div>
                 <div>
-                    <img src={team}/>
+                    <img src={team} />
                     <p className="legend">Team View</p>
                 </div>
                 <div>
-                    <img src={task}/>
+                    <img src={task} />
                     <p className="legend">Task Manager</p>
                 </div>
             </Carousel>
