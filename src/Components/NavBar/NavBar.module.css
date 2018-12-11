@@ -43,7 +43,7 @@
   } 
 
   .about:hover, .skills:hover, .projects:hover, .contact:hover {
-    color: lightblue
+    color: lightblue;
   }
 
   .h1 {
