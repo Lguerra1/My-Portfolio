@@ -5,4 +5,6 @@ const port = 3010;
 const app = express()
 app.use(bodyParser.json());
 
+app.use( express.static( `${__dirname}/../build` ) );
+
 app.listen(port, () => console.log(`Server listening on port ${port}`))
