@@ -3,6 +3,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import classes from './Carousel.module.css';
 
+import cart from '../../image/dealsourcecart.jpg';
+import main from '../../image/dealsourcemain.jpg';
+import front from '../../image/frontpage.jpg';
+import product from '../../image/productview.jpg';
+import stripe from '../../image/stripe.jpg';
+import task from '../../image/tasklist.jpg';
+import team from '../../image/teamlist.jpg';
+
 class DemoCarousel extends Component {
     render() {
         return (<div className={classes.projectsContainer}>
@@ -14,19 +22,19 @@ class DemoCarousel extends Component {
             <p style={{ fontWeight: 'bold' }}>GitHub Repo:<a target="_blank" href="https://github.com/Lguerra1/personal-project-techdeal-source"> https://github.com/Lguerra1/personal-project-techdeal-source</a></p>
             <Carousel className={classes.carousel} width="700px" transitionTime={1000} >
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=IlSb6FqKwClyw9CG%2F97EdyjsDW4%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjpeMWOLLunpUAWLX8GjQA7f--1EmHiEY7vfY_vKN8j2MOzLZf5agYUbhl4lWdI" />
+                    <img src={main} />
                     <p className="legend">Home Page</p>
                 </div>
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Xv5EaS951hivLpU%2F6WWdoSZ%2FbsA%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjtfZKJeeH1pkBEfi5SjQAxLL61SDSzFI60f4_teY9wjcLsdcL5agYUbhl4lWdI" />
+                    <img src={cart} />
                     <p className="legend">Shopping Cart</p>
                 </div>
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=6jKddzf%2FXTM8qYSxs2GFimCCF5k%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjoeZWOKuChrUBFfC1TjQA6d721STfgF46_Koznddon2pTjJ5f5agYUbhl4lWdI" />
+                    <img src={product} />
                     <p className="legend">Product Display</p>
                 </div>
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=GnxZ3lDA%2FWHCY5fpzyhCEIw5JFY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi8fcDeLOb39kBELS1SjQAxe761SDbiRI7oIoO-eo133ZXtIZT5agYUbhl4lWdI" />
+                    <img src={stripe} />
                     <p className="legend">Stripe Checkout</p>
                 </div>
             </Carousel>
@@ -38,15 +46,15 @@ class DemoCarousel extends Component {
 
             <Carousel className={classes.carousel} width="700px" transitionTime={1000}>
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=tESQrhkdDXONgqzI3sA3sHxWvV8%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjqK5SKeOP1pEAUcCsCjQA7fOy1EWPjQY68LYPmL9x5jJ-0IMb5agYUbhl4lWdI" />
+                    <img src={front}/>
                     <p className="legend">Home Page</p>
                 </div>
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Z%2Fxkqec8QeSVU1TPUN2ShhJGpUg%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi7f5TffOSorEBCLn5SjQA7Kbu1SDSwRo65LI3uf9twicSxcsH5agYUbhl4lWdI" />
+                    <img src={team}/>
                     <p className="legend">Team View</p>
                 </div>
                 <div>
-                    <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=b1ZIjsmDRgLBgJmTxxBx%2F1rfDe4%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi6KsDXerTypkAWLC9QjQAwe-u1SDHgFI60I9u5dI912ZTsIpH5agYUbhl4lWdI" />
+                    <img src={task}/>
                     <p className="legend">Task Manager</p>
                 </div>
             </Carousel>

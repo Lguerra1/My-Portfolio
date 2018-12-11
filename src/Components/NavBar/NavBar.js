@@ -22,7 +22,7 @@ const NavBar = () => {
                 <li className={classes.about}>About</li>
                 <li className={classes.skills}>Skills</li>
                 <li className={classes.projects}>Projects</li>
-                <li className={classes.contact}>Contact</li>
+                {/* <li className={classes.contact}>Contact</li> */}
             </ul>
         </header>
     )
