@@ -19,8 +19,7 @@
     justify-content: space-evenly;    
    }
 
-   .nameContainer {
-     
+   .nameContainer {     
      display: flex;
      justify-content: space-evenly;
      flex-direction: column;
@@ -52,8 +51,7 @@
   }
   .h3 {
     margin-top: 0px;
-    margin-bottom: 8px;
-
+    margin-bottom: 8px;    
   }
 
   a{

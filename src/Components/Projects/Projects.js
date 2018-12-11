@@ -7,7 +7,7 @@ const Projects = () => {
 
     return (
         <div className={classes.container}>
-            <h1 className={classes.projects}>Projects</h1>
+            <h1 className={classes.projects}>Projects</h1>            
             <Carousel />
         </div>
     )
