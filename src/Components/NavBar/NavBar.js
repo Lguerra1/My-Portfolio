@@ -5,7 +5,7 @@ import classes from './NavBar.module.css';
 const NavBar = () => {
     return (
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <span className={classes.avatarContainer}>
                 <img className={classes.larryPic} src={larry} alt="Larry Guerra" />
                 <div className={classes.nameContainer}>
@@ -31,9 +31,6 @@ const NavBar = () => {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projectslink">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
             </div>
