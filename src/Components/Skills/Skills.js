@@ -15,7 +15,7 @@ const Skills = () => {
     return (
         
             <div id="skillslink" className={classes.skillsContainer}>
-                <h1 className={classes.skills}>Skills</h1>
+                <h1 className={`${classes.skills}, mt-5 text-center display-3`}>Skills</h1>
                 <div className={classes.skillsIcons}>
                     <div className={classes.rowOne}>
                         <img className={classes.img} src={html5} />

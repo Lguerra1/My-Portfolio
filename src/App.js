@@ -11,12 +11,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="ui grid">
-          <div className="sixteen wide column"><NavBar /></div>
-          <div className="sixteen wide column"><AboutMe /></div>
-          <div className="sixteen wide column"><Skills /></div>
-          <div className="sixteen wide column"><Projects /></div>
-          <div className="sixteen wide column"><Contact /></div>
+        <div>
+          <div><NavBar /></div>
+          <div><AboutMe /></div>
+          <div><Skills /></div>
+          <div><Projects /></div>
+          <div><Contact /></div>
         </div>
       </div>
     );

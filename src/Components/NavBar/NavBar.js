@@ -4,7 +4,8 @@ import classes from './NavBar.module.css';
 
 const NavBar = () => {
     return (
-        <header className={classes.header}>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <span className={classes.avatarContainer}>
                 <img className={classes.larryPic} src={larry} alt="Larry Guerra" />
                 <div className={classes.nameContainer}>
@@ -17,14 +18,49 @@ const NavBar = () => {
                 </div>
 
             </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutlink">About Me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillslink">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projectslink">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-            <ul className={classes.navBar}>
-                <li className={classes.about}><a href="#aboutlink">About</a> </li>
-                <li className={classes.skills}><a href="#skillslink">Skills</a></li>
-                <li className={classes.projects}><a href="#projectslink">Projects</a></li>
-                {/* <li className={classes.contact}>Contact</li> */}
-            </ul>
-        </header>
+        // <header className={classes.header}>
+        //     <span className={classes.avatarContainer}>
+        //         <img className={classes.larryPic} src={larry} alt="Larry Guerra" />
+        //         <div className={classes.nameContainer}>
+        //             <h1 className={classes.h1}>Larry Guerra</h1>
+        //             <h3 className={classes.h3}>Nightmachine@gmail.com</h3>
+        //             <div>
+        //                 <a target="_blank" href="https://www.linkedin.com/in/larry-guerra"> <i className="linkedin icon"></i></a>
+        //                 <a className={classes.github} target="_blank" href="https://github.com/Lguerra1"> <i className="github icon"></i></a>
+        //             </div>
+        //         </div>
+
+        //     </span>
+
+        //     <ul className={classes.navBar}>
+        //         <li className={classes.about}><a href="#aboutlink">About</a> </li>
+        //         <li className={classes.skills}><a href="#skillslink">Skills</a></li>
+        //         <li className={classes.projects}><a href="#projectslink">Projects</a></li>
+        //         {/* <li className={classes.contact}>Contact</li> */}
+        //     </ul>
+        // </header>
+
     )
 }
 

@@ -14,7 +14,6 @@ import team from '../../image/teamlist.jpg';
 class DemoCarousel extends Component {
     render() {
         return (
-            
             <div className={classes.projectsContainer}>
                 <h1 className={classes.projectHeaders}>DealSource</h1>
                 <p className={classes.projectDescription} >
@@ -45,7 +44,6 @@ class DemoCarousel extends Component {
                     Funday.com is a clone of Monday.com which is a project management tool.  This was my first project working with a team of developers.  I had the opportunity to be in charge of building the drag and drop tables that would manage the different tasks for users.  Some of the technologies we used were React, NodeMailer, Redux, Dragula, PostgreSQL, Bootstrap, React Calendar.  We also created test suites using Postman and Jest to ensure that endpoints and methods are all working properly.               </p>
                 <p style={{ fontWeight: 'bold' }}>Website: <a target="_blank" href="http://104.248.70.113:3010">Funday.com</a></p>
                 <p style={{ fontWeight: 'bold' }}>GitHub Repo: <a target="_blank" href="https://github.com/funday-force/funday.com">https://github.com/funday-force/funday.com </a></p>
-
                 <Carousel className={classes.carousel} width="500px" transitionTime={1000}>
                     <div>
                         <img src={front} />
