@@ -6,8 +6,8 @@ const NavBar = () => {
     return (
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <span className={classes.avatarContainer}>
-                <img className={classes.larryPic} src={larry} alt="Larry Guerra" />
+            <span className={`${classes.avatarContainer} mr-5`}>
+                <img className={`${classes.larryPic} mr-5`} src={larry} alt="Larry Guerra" />
                 <div className={classes.nameContainer}>
                     <h1 className={classes.h1}>Larry Guerra</h1>
                     <h3 className={classes.h3}>Nightmachine@gmail.com</h3>
@@ -24,13 +24,13 @@ const NavBar = () => {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#aboutlink">About Me <span class="sr-only">(current)</span></a>
+                        <a class="nav-link mr-5 h5" href="#aboutlink">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skillslink">Skills</a>
+                        <a class="nav-link  mr-5 h5" href="#skillslink">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projectslink">Projects</a>
+                        <a class="nav-link  mr-5 h5" href="#projectslink">Projects</a>
                     </li>
                 </ul>
             </div>
