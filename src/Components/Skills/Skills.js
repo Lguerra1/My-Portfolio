@@ -13,25 +13,57 @@ import Semantic from '../../image/Semantic.jpg'
 const Skills = () => {
 
     return (
-        
-            <div id="skillslink" className={classes.skillsContainer}>
-                <h1 className={`${classes.skills}, mt-5 text-center display-3`}>Skills</h1>
-                <div className={classes.skillsIcons}>
-                    <div className={classes.rowOne}>
-                        <img className={classes.img} src={html5} />
-                        <img className={classes.img} src={css} />
-                        <img className={classes.img} src={Js} />
-                        <img className={classes.img} src={postgres} />
-                    </div>
-                    <div className={classes.rowTwo}>
-                        <img className={classes.img} src={redux} />
-                        <img className={classes.img} src={react} />
-                        <img className={classes.img} src={node} />
-                        <img className={classes.img} src={Semantic} />
-                    </div>
+
+        <container id="skillslink">
+            <h1 className={`mt-5 mb-5 text-center display-3`}>Skills</h1>
+            <div className="row">
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={html5} />
+                </div>
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={css} />
+                </div>
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={Js} />
+                </div>
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={postgres} />
                 </div>
             </div>
-      
+            <div className="row">
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={redux} />
+                </div>
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={react} />
+                </div>
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={node} />
+                </div>
+                <div className="col text-center mt-4">
+                    <img className={`${classes.img} text-center`} src={Semantic} />
+                </div>
+            </div>
+        </container>
+
+        // <div id="skillslink" className={classes.skillsContainer}>
+        //     <h1 className={`${classes.skills}, mt-5 text-center display-3`}>Skills</h1>
+        //     <div className={classes.skillsIcons}>
+        //         <div className={classes.rowOne}>
+        //             <img className={classes.img} src={html5} />
+        //             <img className={classes.img} src={css} />
+        //             <img className={classes.img} src={Js} />
+        //             <img className={classes.img} src={postgres} />
+        //         </div>
+        //         <div className={classes.rowTwo}>
+        //             <img className={classes.img} src={redux} />
+        //             <img className={classes.img} src={react} />
+        //             <img className={classes.img} src={node} />
+        //             <img className={classes.img} src={Semantic} />
+        //         </div>
+        //     </div>
+        // </div>
+
     )
 
 }
