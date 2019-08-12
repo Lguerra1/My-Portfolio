@@ -20,36 +20,36 @@ const Skills = () => {
             <h1 id="skillslink" className={`mt-5 mb-5 text-center display-3 ${classes.title}`}>Skills</h1>
             <div className="row">
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={html5} />
+                    <img className={`${classes.img} text-center`} src={html5} data-toggle="tooltip" data-placement="top" title="HTML5" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={css} />
+                    <img className={`${classes.img} text-center`} src={css} data-toggle="tooltip" data-placement="top" title="CSS" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={Js} />
+                    <img className={`${classes.img} text-center`} src={Js} data-toggle="tooltip" data-placement="top" title="JavaScript" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={postgres} />
+                    <img className={`${classes.img} text-center`} src={postgres} data-toggle="tooltip" data-placement="top" title="Postgres" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={Wordpress} />
+                    <img className={`${classes.img} text-center`} src={Wordpress} data-toggle="tooltip" data-placement="top" title="WordPress" />
                 </div>
             </div>
             <div className="row">
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={redux} />
+                    <img className={`${classes.img} text-center`} src={redux} data-toggle="tooltip" data-placement="top" title="Redux" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center `} src={react} />
+                    <img className={`${classes.img} text-center `} src={react} data-toggle="tooltip" data-placement="top" title="React" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={node} />
+                    <img className={`${classes.img} text-center`} src={node} data-toggle="tooltip" data-placement="top" title="Node" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={Semantic} />
+                    <img className={`${classes.img} text-center`} src={Semantic} data-toggle="tooltip" data-placement="top" title="SemanticUI" />
                 </div>
                 <div className="col text-center mt-4">
-                    <img className={`${classes.img} text-center`} src={Bootstrap} />
+                    <img className={`${classes.img} text-center`} src={Bootstrap} data-toggle="tooltip" data-placement="top" title="Bootstrap" />
                 </div>
             </div>
         </div >

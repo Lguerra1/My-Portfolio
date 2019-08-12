@@ -1,6 +1,7 @@
-.projects {
-    text-align: center;
-    padding-top: 100px;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 60px;
+.projects {   
+    padding-top: 100px;   
+}
+
+.projectDescription {
+    font-size: 20px;   
 }
