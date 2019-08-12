@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import classes from './Carousel.module.css';
-
 import cart from '../../image/dealsourcecart.jpg';
 import main from '../../image/dealsourcemain.jpg';
 import front from '../../image/frontpage.jpg';

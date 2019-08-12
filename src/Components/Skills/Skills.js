@@ -16,7 +16,7 @@ const Skills = () => {
 
     return (
 
-        <container >
+        <div className="container" >
             <h1 id="skillslink" className={`mt-5 mb-5 text-center display-3 ${classes.title}`}>Skills</h1>
             <div className="row">
                 <div className="col text-center mt-4">
@@ -52,7 +52,7 @@ const Skills = () => {
                     <img className={`${classes.img} text-center`} src={Bootstrap} />
                 </div>
             </div>
-        </container>
+        </div >
     )
 
 }
