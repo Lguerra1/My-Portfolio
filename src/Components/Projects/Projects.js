@@ -76,6 +76,21 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+
+            <h1 className={`text-center mt-5 mb-3`}>Studio Ghibli App</h1>
+            <div className="row">
+                <div className="col-1">
+                </div>
+                <div className={`${classes.projectDescription} col-10`}>
+                    Designed for mobile first, this is a small app that is communicating with two API's.  The Studio Ghibli API to retrieve all the movie information and the TMDb API for the movie posters.  This was a fun React project, using SemanticUI for the styling.
+                </div>
+                <div className="col-1">
+                </div>
+            </div>
+            <p className="mt-3 text-center font-weight-bold">GitHub Repo: <a target="_blank" href="https://github.com/Lguerra1/studio-ghibli">https://github.com/Lguerra1/studio-ghibli </a></p>
+            <div className="embed-responsive embed-responsive-16by9">
+                <iframe className="mx-auto d-block embed-responsive-item" src="https://www.youtube.com/embed/wBkfvxW8uoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            </div>
         </div>
     );
 }
