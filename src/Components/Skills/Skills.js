@@ -52,6 +52,13 @@ const Skills = () => {
                     <img className={`${classes.img} text-center`} src={Bootstrap} data-toggle="tooltip" data-placement="top" title="Bootstrap" />
                 </div>
             </div>
+            {/* <div className="row mt-5"> */}
+                {/* <div className="col-12"> */}
+                    <h4 className="text-center mt-5 mb-2"> Codewars</h4>
+                    <a target="_blank" href="https://www.codewars.com/users/Lguerra1"><h6 className="text-center mb-2">https://www.codewars.com/users/Lguerra1</h6></a>
+                    <a target="_blank" href="https://www.codewars.com/users/Lguerra1"><img className="mx-auto d-block" src="https://www.codewars.com/users/Lguerra1/badges/large" /></a>
+                {/* </div> */}
+            {/* </div> */}
         </div >
     )
 
