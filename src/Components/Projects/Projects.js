@@ -27,7 +27,7 @@ const Projects = () => {
                 <div className="col-1">
                 </div>
             </div>
-            <p className="mt-3 text-center font-weight-bold">Website: <a target="_blank" href='http://dealsource.larryguerra.com'>dealsource.larryguerra.com</a></p>
+            <p className="mt-3 text-center font-weight-bold">Live Site: <a target="_blank" href='http://dealsource.larryguerra.com'>dealsource.larryguerra.com</a></p>
             <p className="mt-3 text-center font-weight-bold">GitHub Repo:<a target="_blank" href="https://github.com/Lguerra1/personal-project-techdeal-source"> https://github.com/Lguerra1/personal-project-techdeal-source</a></p>
 
 
@@ -60,7 +60,7 @@ const Projects = () => {
                 <div className="col-1">
                 </div>
             </div>
-            <p className="mt-3 text-center font-weight-bold">Website: <a target="_blank" href="http://104.248.70.113:3010">Funday.com</a></p>
+            <p className="mt-3 text-center font-weight-bold">Live Site: <a target="_blank" href="http://104.248.70.113:3010">Funday.com</a></p>
             <p className="mt-3 text-center font-weight-bold">GitHub Repo: <a target="_blank" href="https://github.com/funday-force/funday.com">https://github.com/funday-force/funday.com </a></p>
 
             <div id="carouselExampleControls2" className="carousel slide carousel-fade" data-ride="carousel" data-touch={true}>
@@ -87,6 +87,7 @@ const Projects = () => {
                 <div className="col-1">
                 </div>
             </div>
+            <p className="mt-3 text-center font-weight-bold">Live Site: <a target="_blank" href="https://studio-ghibli-iw4pfutcj.now.sh/#/">Studio Ghibli App</a></p>
             <p className="mt-3 text-center font-weight-bold">GitHub Repo: <a target="_blank" href="https://github.com/Lguerra1/studio-ghibli">https://github.com/Lguerra1/studio-ghibli </a></p>
             <div className="embed-responsive embed-responsive-16by9">
                 <iframe className="mx-auto d-block embed-responsive-item" src="https://www.youtube.com/embed/wBkfvxW8uoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
