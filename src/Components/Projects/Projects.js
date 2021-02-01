@@ -37,7 +37,7 @@ const Projects = () => {
                     <div className="carousel-item active" data-interval="3000">
                         <img src={main} className="d-block w-100" alt="..." />
                     </div>
-                    <div className="carousel-item" data-interval="3000">
+                    {/* <div className="carousel-item" data-interval="3000">
                         <img src={cart} className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item" data-interval="3000">
@@ -45,7 +45,7 @@ const Projects = () => {
                     </div>
                     <div className="carousel-item" data-interval="3000">
                         <img src={stripe} className="d-block w-100" alt="..." />
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
@@ -66,13 +66,13 @@ const Projects = () => {
 
             <div id="carouselExampleControls2" className="carousel slide carousel-fade" data-ride="carousel" data-touch={true}>
                 <div className="carousel-inner">
-                    <div className="carousel-item active" data-interval="3000">
+                    {/* <div className="carousel-item active" data-interval="3000">
                         <img src={front} className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item" data-interval="3000">
+                    </div> */}
+                    {/* <div className="carousel-item" data-interval="3000">
                         <img src={team} className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item" data-interval="3000">
+                    </div> */}
+                    <div className="carousel-item active" data-interval="3000">
                         <img src={task} className="d-block w-100" alt="..." />
                     </div>
                 </div>
