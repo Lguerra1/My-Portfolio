@@ -7,6 +7,7 @@ import product from '../../image/productview.jpg';
 import stripe from '../../image/stripe.jpg';
 import task from '../../image/tasklist.jpg';
 import team from '../../image/teamlist.jpg';
+import uniqueHome from '../../image/Capture.PNG';
 
 const Projects = () => {
 
@@ -73,6 +74,26 @@ const Projects = () => {
                     </div>
                     <div className="carousel-item" data-interval="3000">
                         <img src={task} className="d-block w-100" alt="..." />
+                    </div>
+                </div>
+            </div>
+
+            <h1 className={`text-center mt-5 mb-3`}>Unique Smart Home</h1>
+            <div className="row">
+                <div className="col-1">
+                </div>
+                <div className={`${classes.projectDescription} col-10`}>
+                    Unique Smart Home is a website I made for a friend of mine who installs smart home systems.  I built this website for responsiveness and can be viewed on any device.  A few of the technologies I used were react-scroll, styled-components, and pure-react-carousel.  Since this is a purely static website I deployed it using Netlify's services for an easy automactic deploy.
+                </div>
+                <div className="col-1">
+                </div>
+            </div>
+            <p className="mt-3 text-center font-weight-bold">Live Site: <a target="_blank" href="https://uniquesmarthome.netlify.app/">Unique Smart Home</a></p>
+
+            <div id="carouselExampleControls2" className="carousel slide carousel-fade" data-ride="carousel" data-touch={true}>
+                <div className="carousel-inner">
+                    <div className="carousel-item active" data-interval="3000">
+                        <img src={uniqueHome} className="d-block w-100" alt="..." />
                     </div>
                 </div>
             </div>
