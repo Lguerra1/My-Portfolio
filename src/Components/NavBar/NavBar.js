@@ -10,7 +10,6 @@ const NavBar = () => {
                 <img className={`${classes.larryPic}`} src={larry} alt="Larry Guerra" />
                 <div className={`${classes.nameContainer} mr-5`}>
                     <h1 className={classes.h1}>Larry Guerra</h1>
-                    {/* <h3 className={classes.h3}>Nightmachine@gmail.com</h3> */}
                     <div>
                         <a target="_blank" href="https://www.linkedin.com/in/larry-guerra"> <i className="linkedin icon"></i></a>
                         <a className={classes.github} target="_blank" href="https://github.com/Lguerra1"> <i className="github icon"></i></a>
