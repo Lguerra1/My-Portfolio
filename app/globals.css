@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Dark first palette. Muted text stays above 4.5:1 contrast on the background. */
+@theme {
+  --color-bg: #0d1117;
+  --color-surface: #141a23;
+  --color-line: #232c38;
+  --color-fg: #e4e8ee;
+  --color-muted: #8d98a8;
+  --color-accent: #7fb8ff;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--color-bg); color: var(--color-fg); font-family: var(--font-body); line-height: 1.65; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; border-radius: 4px; }
+section[id], header[id] { scroll-margin-top: 16px; }
