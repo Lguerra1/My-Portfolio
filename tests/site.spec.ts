@@ -55,9 +55,9 @@ test("nav moves between pages and marks the current one", async ({ page }) => {
   }
 });
 
-test("work page lists all six case studies", async ({ page }) => {
+test("work page lists all nine case studies", async ({ page }) => {
   await page.goto("/work");
-  await expect(page.locator("article")).toHaveCount(6);
+  await expect(page.locator("article")).toHaveCount(9);
 });
 
 test("unknown pages show the 404 page", async ({ page }) => {
