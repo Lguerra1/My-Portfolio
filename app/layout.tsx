@@ -3,10 +3,25 @@ import SiteNav from "@/components/SiteNav";
 import { profile } from "@/content";
 import "./globals.css";
 
+const title = "Larry Guerra | Full Stack Software Engineer";
+const description =
+  "Full stack software engineer building lending and payments software with Angular, TypeScript, and .NET.";
+
 export const metadata: Metadata = {
-  title: { default: "Larry Guerra | Full Stack Software Engineer", template: "%s | Larry Guerra" },
-  description:
-    "Full stack software engineer building lending and payments software with Angular, TypeScript, and .NET.",
+  metadataBase: new URL("https://larryguerra.netlify.app"),
+  title: { default: title, template: "%s | Larry Guerra" },
+  description,
+  openGraph: {
+    title,
+    description,
+    siteName: "Larry Guerra",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

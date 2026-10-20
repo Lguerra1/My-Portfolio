@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { about, profile } from "@/content";
+import { about, caseStudies, profile } from "@/content";
 import { External, SubHead, button, card, chip, label, primaryButton } from "@/components/ui";
 
 const next = [
-  { href: "/work", title: "Work", text: "Nine production projects from regulated lending and payments." },
+  { href: "/work", title: "Work", text: `${caseStudies.length} production projects from regulated lending and payments.` },
   { href: "/projects", title: "Projects", text: "InvoiceDesk, a full stack app deployed with Docker on AWS." },
   { href: "/experience", title: "Experience", text: "Work history, education, and certifications." },
 ];

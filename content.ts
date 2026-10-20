@@ -29,7 +29,7 @@ export const stats = [
   { value: "2", label: "products: Check City Online & Scryp" },
 ];
 
-export type CaseStudy = { area: string; title: string; summary: string; role: string; stack: string };
+export type CaseStudy = { area: string; title: string; summary: string; role: string; stack: string; featured: boolean };
 
 export const caseStudies: CaseStudy[] = [
   {
@@ -39,6 +39,7 @@ export const caseStudies: CaseStudy[] = [
       "Built the merchant experience from the ground up: multi-step onboarding, login, password reset, a cart builder with tax math and loan-term selection, refunds and returns, document uploads, and role-based permissions.",
     role: "Front end engineer",
     stack: "Angular, TypeScript, .NET WebAPI, SQL Server",
+    featured: true,
   },
   {
     area: "Lending",
@@ -47,6 +48,7 @@ export const caseStudies: CaseStudy[] = [
       "Delivered the customer loan application end to end: personal and financial info, review, e-sign consent, a repeat-customer flow, Text-to-Apply, payment schedules, and the customer dashboard MVP.",
     role: "Front end engineer",
     stack: "Angular, TypeScript, .NET WebAPI",
+    featured: false,
   },
   {
     area: "Onboarding",
@@ -55,6 +57,7 @@ export const caseStudies: CaseStudy[] = [
       "Led the integration of Jumio ID verification into new and repeat customer flows on both products, with an embedded iFrame, failure handling, state and risk-based routing, and results fed back into the decision engine.",
     role: "Front end lead",
     stack: "Angular, ASP.NET Web Forms, .NET Core WebAPI, Jumio",
+    featured: true,
   },
   {
     area: "Lending",
@@ -63,6 +66,7 @@ export const caseStudies: CaseStudy[] = [
       "Brought title loans online: vehicle photo and title uploads, VIN validation through Kelley Blue Book, a repeat-customer vehicle selector, and a title lead funnel with API validation and prefilled hand-off to the full application.",
     role: "Engineer",
     stack: "ASP.NET Web Forms, C#, .NET Core WebAPI",
+    featured: true,
   },
   {
     area: "Payments",
@@ -71,6 +75,7 @@ export const caseStudies: CaseStudy[] = [
       "Integrated a real time payments API so loans fund instantly across every application and refinance flow, with error handling and UX for in-flight transactions.",
     role: "Front end engineer",
     stack: "ASP.NET Web Forms, .NET Core WebAPI, Real-Time Payments API",
+    featured: true,
   },
   {
     area: "Platform",
@@ -79,6 +84,7 @@ export const caseStudies: CaseStudy[] = [
       "Rebuilt the member dashboard on a new master-page framework with a responsive menu and card-based layout, including status-driven cards for active, pending, funding, default, and settlement states, rolled out behind feature flags.",
     role: "Engineer",
     stack: "ASP.NET Web Forms, C#, SQL Server",
+    featured: false,
   },
   {
     area: "Growth",
@@ -87,6 +93,7 @@ export const caseStudies: CaseStudy[] = [
       "Built a lead-generation application and prescreen approval flow with anti-bot protection, an invisible captcha, and source tracking.",
     role: "Development lead",
     stack: "ASP.NET Web Forms, JavaScript, HTMX",
+    featured: false,
   },
   {
     area: "Collections",
@@ -95,6 +102,7 @@ export const caseStudies: CaseStudy[] = [
       "Let customers combine several debts into one payment plan: debt selection, plan calculation, schedule generation, dashboard plan cards, and self-cure integration.",
     role: "Engineer",
     stack: "ASP.NET Web Forms, .NET Core WebAPI, SQL Server",
+    featured: false,
   },
   {
     area: "Platform",
@@ -103,6 +111,7 @@ export const caseStudies: CaseStudy[] = [
       "Built and standardized reusable Angular components and design system patterns, improving WCAG accessibility and visual consistency across the product suite.",
     role: "Engineer and maintainer",
     stack: "Angular, SASS, WCAG",
+    featured: false,
   },
 ];
 

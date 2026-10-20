@@ -55,9 +55,10 @@ test("nav moves between pages and marks the current one", async ({ page }) => {
   }
 });
 
-test("work page lists all nine case studies", async ({ page }) => {
+test("work page lists all nine case studies across featured and additional sections", async ({ page }) => {
   await page.goto("/work");
-  await expect(page.locator("article")).toHaveCount(9);
+  await expect(page.locator('section[aria-labelledby="featured-h"] article')).toHaveCount(4);
+  await expect(page.locator('section[aria-labelledby="more-h"] li')).toHaveCount(5);
 });
 
 test("unknown pages show the 404 page", async ({ page }) => {
