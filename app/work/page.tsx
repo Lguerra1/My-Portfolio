@@ -15,7 +15,7 @@ export default function WorkPage() {
         title="Production work in regulated FinTech"
         intro="This code is proprietary, so these are written summaries of what I built and how."
       />
-      <dl className="mb-14 grid grid-cols-2 gap-4 sm:grid-cols-4" aria-label="Delivery stats">
+      <dl className="mb-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5" aria-label="Delivery stats">
         {stats.map((s) => (
           <div key={s.label} className={`${card} grid gap-1 p-5`}>
             <dt className="order-2 text-[13px] text-muted">{s.label}</dt>

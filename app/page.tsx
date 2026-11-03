@@ -22,6 +22,7 @@ export default function Home() {
         </ul>
         <div className="flex flex-wrap gap-3">
           <Link href="/work" className={primaryButton}>See my work</Link>
+          <a href={profile.resume} target="_blank" rel="noopener noreferrer" className={button}>Resume (PDF)</a>
           <External href={profile.linkedin} className={button}>LinkedIn</External>
           <External href={profile.github} className={button}>GitHub</External>
         </div>

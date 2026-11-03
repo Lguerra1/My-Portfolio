@@ -13,6 +13,9 @@ export default function ContactPage() {
         <CopyEmail email={profile.email} />
         <External href={profile.linkedin} className="text-accent hover:underline">linkedin.com/in/larry-guerra</External>
         <External href={profile.github} className="text-accent hover:underline">github.com/Lguerra1</External>
+        <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+          Download my resume (PDF)
+        </a>
       </div>
     </>
   );

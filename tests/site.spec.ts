@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { caseStudies, profile } from "../content";
 
 const pages = [
   { path: "/", h1: /lending and payments software/ },
@@ -55,10 +56,20 @@ test("nav moves between pages and marks the current one", async ({ page }) => {
   }
 });
 
-test("work page lists all nine case studies across featured and additional sections", async ({ page }) => {
+test("work page lists every case study across featured and additional sections", async ({ page }) => {
   await page.goto("/work");
-  await expect(page.locator('section[aria-labelledby="featured-h"] article')).toHaveCount(4);
-  await expect(page.locator('section[aria-labelledby="more-h"] li')).toHaveCount(5);
+  const featured = caseStudies.filter((c) => c.featured).length;
+  await expect(page.locator('section[aria-labelledby="featured-h"] article')).toHaveCount(featured);
+  await expect(page.locator('section[aria-labelledby="more-h"] li')).toHaveCount(caseStudies.length - featured);
+});
+
+test("the resume is published and reachable", async ({ page, request }) => {
+  await page.goto("/contact");
+  const link = page.getByRole("link", { name: /resume/i });
+  await expect(link).toHaveAttribute("href", profile.resume);
+  const res = await request.get(profile.resume);
+  expect(res.status()).toBe(200);
+  expect(res.headers()["content-type"]).toContain("pdf");
 });
 
 test("unknown pages show the 404 page", async ({ page }) => {

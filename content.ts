@@ -7,11 +7,12 @@ export const profile = {
   email: "larryemanuelguerra@gmail.com",
   linkedin: "https://www.linkedin.com/in/larry-guerra",
   github: "https://github.com/Lguerra1",
+  resume: "/Larry_Guerra_Resume.pdf",
   headline: "I build the customer side of",
   headlineAccent: "lending and payments software.",
   lede:
     "Seven plus years shipping production web applications in FinTech and SaaS. I lead features end to end in Angular, TypeScript, and .NET, from technical design through release, inside regulated financial workflows.",
-  chips: ["Angular", "TypeScript", "C# / .NET", "React", "SQL Server", "PostgreSQL", "English / Spanish"],
+  chips: ["Angular", "TypeScript", "C# / .NET", "React", "SQL Server", "PostgreSQL", "Web performance", "English / Spanish"],
 };
 
 export const about = {
@@ -27,11 +28,21 @@ export const stats = [
   { value: "215+", label: "production bugs resolved" },
   { value: "15+", label: "product initiatives" },
   { value: "2", label: "products: Check City Online & Scryp" },
+  { value: "45%+", label: "lighter mobile pages" },
 ];
 
 export type CaseStudy = { area: string; title: string; summary: string; role: string; stack: string; featured: boolean };
 
 export const caseStudies: CaseStudy[] = [
+  {
+    area: "Performance",
+    title: "Cutting page weight across the consumer sites",
+    summary:
+      "Replaced an always loaded third party chat SDK with click to load delivery through Google Tag Manager, cutting mobile page weight 45 to 60% and Total Blocking Time 53 to 62% across the consumer lending website and the members portal. I built a scripted Lighthouse benchmark first so the gain was measured rather than assumed, then locked the paid live agent chat to company domains and fixed broken header chat icons.",
+    role: "Engineer",
+    stack: "Google Tag Manager, Lighthouse, Core Web Vitals, JavaScript",
+    featured: true,
+  },
   {
     area: "Merchant tools",
     title: "Scryp merchant portal",
@@ -139,6 +150,7 @@ export const experience: Job[] = [
     role: "Software Engineer (2023 to now) · Frontend Developer (2021 to 2023)",
     points: [
       "Own end to end feature delivery across two consumer lending products: Scryp, built in Angular and TypeScript, and Check City Online, built on ASP.NET Web Forms (C#) with a .NET Core Web API, both on SQL Server.",
+      "Cut mobile page weight 45 to 60% and Total Blocking Time 53 to 62% across the consumer lending website and members portal by moving an always loaded third party chat SDK to click to load delivery through Google Tag Manager, proven with a scripted Lighthouse benchmark.",
       "Delivered 430+ user stories, resolved 215+ production bugs, and led 15+ product initiatives, including Jumio identity verification, real time payments, and online title lending.",
       "Built the Scryp merchant portal and customer loan application from the ground up, and led the Check City Online member dashboard redesign and profile page.",
       "Diagnose and fix production issues with Raygun monitoring.",
@@ -167,6 +179,7 @@ export const skills = [
   { group: "Front end", items: "Angular, TypeScript, JavaScript, React, Next.js, Redux, HTML, CSS, SASS, Bootstrap, HTMX, Tailwind CSS" },
   { group: "Back end and data", items: "C#, ASP.NET Web Forms, .NET Core, WebAPI, .NET MVC, Node.js, Express, SQL Server, EF Core, Dapper, PostgreSQL, REST" },
   { group: "UI and accessibility", items: "Design systems, reusable components, WCAG, responsive UI, Figma to UI" },
+  { group: "Web performance", items: "Google Tag Manager, Lighthouse, Core Web Vitals, third party script optimization, page weight and blocking time analysis, SEO" },
   { group: "Delivery and testing", items: "Git, GitHub Actions, Playwright, Docker, AWS ECS, Netlify, Raygun, Jira, Agile/Scrum, feature flags" },
   { group: "Integrations", items: "Jumio identity verification, Prove phone verification, real time payments, Kelley Blue Book VIN validation, Brevo, NeverBounce, Trustpilot, Zoom Chat, GrowSurf, Lottie" },
   { group: "AI assisted development", items: "Claude, ChatGPT, and Cursor for development, debugging, and code review" },
