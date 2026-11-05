@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { about, caseStudies, profile } from "@/content";
 import { External, SubHead, button, card, chip, label, primaryButton } from "@/components/ui";
@@ -11,21 +12,32 @@ const next = [
 export default function Home() {
   return (
     <>
-      <header className="grid gap-6 py-16 sm:py-20">
-        <span className={label}>{profile.title} · {profile.location}</span>
-        <h1 className="text-[clamp(36px,6vw,60px)] font-bold leading-[1.05] tracking-tight">
-          {profile.headline} <span className="text-accent">{profile.headlineAccent}</span>
-        </h1>
-        <p className="max-w-[62ch] text-[19px] text-muted">{profile.lede}</p>
-        <ul className="flex flex-wrap gap-2" aria-label="Core technologies">
-          {profile.chips.map((c) => <li key={c} className={chip}>{c}</li>)}
-        </ul>
-        <div className="flex flex-wrap gap-3">
-          <Link href="/work" className={primaryButton}>See my work</Link>
-          <a href={profile.resume} target="_blank" rel="noopener noreferrer" className={button}>Resume (PDF)</a>
-          <External href={profile.linkedin} className={button}>LinkedIn</External>
-          <External href={profile.github} className={button}>GitHub</External>
+      <header className="grid items-center gap-8 py-16 sm:py-20 md:grid-cols-[1fr_auto] md:gap-12">
+        <div className="grid gap-6">
+          <span className={label}>{profile.title} · {profile.location}</span>
+          <h1 className="text-[clamp(36px,6vw,60px)] font-bold leading-[1.05] tracking-tight">
+            {profile.headline} <span className="text-accent">{profile.headlineAccent}</span>
+          </h1>
+          <p className="max-w-[62ch] text-[19px] text-muted">{profile.lede}</p>
+          <ul className="flex flex-wrap gap-2" aria-label="Core technologies">
+            {profile.chips.map((c) => <li key={c} className={chip}>{c}</li>)}
+          </ul>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/work" className={primaryButton}>See my work</Link>
+            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className={button}>Resume (PDF)</a>
+            <External href={profile.linkedin} className={button}>LinkedIn</External>
+            <External href={profile.github} className={button}>GitHub</External>
+          </div>
         </div>
+        {/* Photo leads on narrow screens, sits beside the intro from md up. */}
+        <Image
+          src={profile.photo}
+          alt={`Portrait of ${profile.name}`}
+          width={400}
+          height={400}
+          priority
+          className="order-first size-28 rounded-full border border-line object-cover sm:size-32 md:order-none md:size-44"
+        />
       </header>
 
       <section aria-labelledby="about-h" className="grid gap-6 border-t border-line py-14">

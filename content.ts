@@ -8,6 +8,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/larry-guerra",
   github: "https://github.com/Lguerra1",
   resume: "/Larry_Guerra_Resume.pdf",
+  photo: "/larry-guerra.jpg",
   headline: "I build the customer side of",
   headlineAccent: "lending and payments software.",
   lede:
