@@ -172,7 +172,7 @@ export const experience: Job[] = [
   {
     when: "Mar 2021 to now",
     company: "Softwise · Lehi, UT",
-    role: "Software Engineer (2023 to now) · Frontend Developer (2021 to 2023)",
+    role: "Software Engineer",
     points: [
       "Own end to end feature delivery across two consumer lending products: Scryp, built in Angular and TypeScript, and Check City Online, built on ASP.NET Web Forms (C#) with a .NET Core Web API, both on SQL Server.",
       "Cut mobile page weight 45 to 60% and Total Blocking Time 53 to 62% across the consumer lending website and members portal by moving an always loaded third party chat SDK to click to load delivery through Google Tag Manager, proven with a scripted Lighthouse benchmark.",
@@ -186,7 +186,7 @@ export const experience: Job[] = [
   {
     when: "Jan 2019 to Mar 2021",
     company: "BrightBridge Web · Provo, UT",
-    role: "Software Engineer / Project Manager",
+    role: "Software Engineer",
     points: [
       "Delivered full stack SaaS platforms for clients with React, .NET, and PostgreSQL.",
       "Built the complete Node.js and Express backend for a note taking app, using WebSockets for real time sync so a customer's session updated instantly on every device with the app open.",
