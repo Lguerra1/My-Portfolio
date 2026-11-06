@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { invoiceDesk } from "@/content";
-import { PageHead, SubHead, card, chip, label } from "@/components/ui";
+import { invoiceDesk, sideProjects } from "@/content";
+import { External, PageHead, SubHead, button, card, chip, label } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Projects" };
 
@@ -34,6 +34,29 @@ export default function ProjectsPage() {
           </div>
         </figure>
       </article>
+
+      <section aria-labelledby="other-h" className="grid gap-6 pt-14">
+        <SubHead title="Other projects" id="other-h" />
+        <ul className="grid gap-4">
+          {sideProjects.map((p) => (
+            <li key={p.name}>
+              <article className={`${card} grid gap-3.5 p-6 md:p-7`}>
+                <span className={label}>{p.eyebrow}</span>
+                <h3 className="text-xl font-bold tracking-tight">{p.name}</h3>
+                <p className="text-muted">{p.summary}</p>
+                <p className="text-muted">{p.detail}</p>
+                <ul className="flex flex-wrap gap-2" aria-label={`${p.name} stack`}>
+                  {p.stack.map((s) => <li key={s} className={chip}>{s}</li>)}
+                </ul>
+                <div className="flex flex-wrap gap-3 pt-1">
+                  <External href={p.live} className={button}>Visit site</External>
+                  <External href={p.repo} className={button}>Source</External>
+                </div>
+              </article>
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

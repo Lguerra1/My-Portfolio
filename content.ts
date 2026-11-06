@@ -142,6 +142,30 @@ export const invoiceDesk = {
   deploy: { name: "Docker → AWS ECS", detail: "Containerized deployment" },
 };
 
+export type SideProject = {
+  name: string;
+  eyebrow: string;
+  summary: string;
+  detail: string;
+  stack: string[];
+  live: string;
+  repo: string;
+};
+
+export const sideProjects: SideProject[] = [
+  {
+    name: "Santaquin Seaside Retreat",
+    eyebrow: "Live site",
+    summary:
+      "A marketing site for a short term rental, hand built with plain HTML, CSS, and JavaScript. No framework and no build step. Photo gallery, amenities, FAQ, a separate nearby attractions page, and booking hand off to the Airbnb listing.",
+    detail:
+      "Built as progressive enhancement: the mobile nav toggle drives aria-expanded, and scroll reveals run on IntersectionObserver with a fallback that shows every section when it isn't available, so the page still reads correctly with JavaScript off.",
+    stack: ["HTML", "CSS", "JavaScript", "Netlify"],
+    live: "https://staysantaquin.com",
+    repo: "https://github.com/Lguerra1/santaquin-seaside-retreat",
+  },
+];
+
 export type Job = { when: string; company: string; role: string; points: string[] };
 
 export const experience: Job[] = [
@@ -154,6 +178,7 @@ export const experience: Job[] = [
       "Cut mobile page weight 45 to 60% and Total Blocking Time 53 to 62% across the consumer lending website and members portal by moving an always loaded third party chat SDK to click to load delivery through Google Tag Manager, proven with a scripted Lighthouse benchmark.",
       "Delivered 430+ user stories, resolved 215+ production bugs, and led 15+ product initiatives, including Jumio identity verification, real time payments, and online title lending.",
       "Built the Scryp merchant portal and customer loan application from the ground up, and led the Check City Online member dashboard redesign and profile page.",
+      "Authored the architecture decisions for HTMX standards and Tailwind v4 adoption in a Web Forms to ASP.NET Core MVC migration, removing ~83,000 lines of vendored front end code and ~90 KB of jQuery.",
       "Diagnose and fix production issues with Raygun monitoring.",
       "Mentor junior developers through code review and pairing.",
     ],
@@ -164,25 +189,20 @@ export const experience: Job[] = [
     role: "Software Engineer / Project Manager",
     points: [
       "Delivered full stack SaaS platforms for clients with React, .NET, and PostgreSQL.",
-      "Built the complete Node.js and Express backend for a note taking app.",
+      "Built the complete Node.js and Express backend for a note taking app, using WebSockets for real time sync so a customer's session updated instantly on every device with the app open.",
+      "Built the app's rich text (WYSIWYG) editor with the TinyMCE React library.",
       "Served as primary technical contact for client stakeholders.",
     ],
-  },
-  {
-    when: "2010 to 2017",
-    company: "Progrexion · Provo, UT",
-    role: "Sales Coach · Sales Representative · Customer Service",
-    points: ["Coached multiple remote and in office sales teams."],
   },
 ];
 
 export const skills = [
-  { group: "Front end", items: "Angular, TypeScript, JavaScript, React, Next.js, Redux, HTML, CSS, SASS, Bootstrap, HTMX, Tailwind CSS" },
-  { group: "Back end and data", items: "C#, ASP.NET Web Forms, .NET Core, WebAPI, .NET MVC, Node.js, Express, SQL Server, EF Core, Dapper, PostgreSQL, REST" },
-  { group: "UI and accessibility", items: "Design systems, reusable components, WCAG, responsive UI, Figma to UI" },
+  { group: "Front end", items: "Angular, TypeScript, JavaScript, React, Next.js, Redux, HTML, CSS, SASS, Bootstrap, HTMX, Tailwind CSS, jQuery" },
+  { group: "Back end and data", items: "C#, ASP.NET Web Forms, .NET Core, WebAPI, .NET MVC, Node.js, Express, SQL Server, T-SQL, EF Core, Dapper, PostgreSQL, REST, WebSockets" },
+  { group: "UI and accessibility", items: "Design systems, reusable components, WCAG, responsive UI, cross browser compatibility, Material UI, Figma to UI" },
   { group: "Web performance", items: "Google Tag Manager, Lighthouse, Core Web Vitals, third party script optimization, page weight and blocking time analysis, SEO" },
-  { group: "Delivery and testing", items: "Git, GitHub Actions, Playwright, Docker, AWS ECS, Netlify, Raygun, Jira, Agile/Scrum, feature flags" },
-  { group: "Integrations", items: "Jumio identity verification, Prove phone verification, real time payments, Kelley Blue Book VIN validation, Brevo, NeverBounce, Trustpilot, Zoom Chat, GrowSurf, Lottie" },
+  { group: "Delivery and testing", items: "Git, GitHub, Bitbucket, GitHub Actions, Playwright, Docker, AWS ECS, Netlify, Raygun, Postman, Jira, Confluence, Agile/Scrum, feature flags" },
+  { group: "Integrations", items: "Jumio identity verification, Zions Bank real time payments, Kelley Blue Book VIN validation, banking partner APIs, Prove phone verification, Brevo, NeverBounce, Trustpilot, Zoom Chat, GrowSurf, Lottie" },
   { group: "AI assisted development", items: "Claude, ChatGPT, and Cursor for development, debugging, and code review" },
 ];
 
@@ -193,4 +213,5 @@ export const credentials = [
   { name: "Certified Scrum Product Owner", year: "2024" },
   { name: "AWS Certified Cloud Practitioner", year: "2024" },
   { name: "Front End Developer Certificate, WGU", year: "2024" },
+  { name: "Full Stack Web Development Bootcamp, DevMountain", year: "2018" },
 ];
