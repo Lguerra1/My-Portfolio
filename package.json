@@ -10,17 +10,17 @@
     "test": "playwright test"
   },
   "dependencies": {
-    "next": "^16.3.8",
+    "next": "^16.4.6",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",
-    "@playwright/test": "^1.63.0",
-    "@tailwindcss/postcss": "^4.3.3",
+    "@playwright/test": "^1.65.0",
+    "@tailwindcss/postcss": "^4.3.5",
     "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",
-    "serve": "^14.2.6",
+    "serve": "^14.2.7",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2"
   },
